@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+table{
+    width: 60%;
+    margin-left: 250px;
+    border: 2px solid grey;
+    margin-top: 10px;
+}
+thead{
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+th{
+    width: 100% ;
+    border: 1px solid black;
+}
+tbody{
+    width: 100%;
+    height: 100px;
+}
+td{
+    height: 40px;
+    width: 50% ;
+    border: 1px solid black;
+    padding-left: 20px; ;
+    align-content: center;
+}
+.img{
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    margin-left: 250px;
+    border: 2px solid grey;
+}
+img{
+    line-height: 450px;
+    width: 60%;
+    height: 450px;
+    padding: 20px;
+    
+
+}
+
+select{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 0;
+    border: 1px solid gray;
+}
+

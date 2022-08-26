@@ -3,22 +3,39 @@ import React, { useEffect, useState } from "react";
 
 
 var pokemonData;
+
+var url;
+
+
+
+var foo = [];
+
+
+for (var i = 1; i <= 1000; i++) {
+
+   foo.push( {value: i, text: i}) 
+
+}
 const App = () => {
-  const [num, setNum] = useState();
+  var [num, setNum] = useState();
   const [pkname, setName ]= useState();
   const [moves, setMoves] = useState();
 
 
+  if(num<650){
+  console.log(num);
+    url= `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${num}.svg`;}
+    else if(num>=1000){
+      
+      num = +num + 9001
+      console.log(num);
+      url= `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`;}
+    
+      else{
+        console.log(num);
+        url= `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`;}
+      
 
-  var url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${num}.svg`;
-  var foo = [];
- 
-
-  for (var i = 1; i <= 1000; i++) {
-  
-     foo.push( {value: i, text: i}) 
-  
-  }
 
 // console.log(foo);
   useEffect(()=>{
@@ -90,6 +107,6 @@ const App = () => {
     </>
     
   );
-}
+      }
 
 export default App;

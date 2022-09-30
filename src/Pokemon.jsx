@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 var url;
 const Pokemon =(props) =>{
     var num = props.id;

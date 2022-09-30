@@ -1,15 +1,13 @@
 import React from "react";
 import SelectId from "./SelectId";
-import Pokemon from "./Pokemon";
-
 
 
 const App = () => {
 
  return(
     <>
+    <h1>Pokemon Data</h1>
    <SelectId />
- <Pokemon />
     </>
     
   );
